@@ -1715,8 +1715,51 @@ body {
 }
 
 @media (max-width: 767px) {
-  body { padding-bottom: 72px; }
-  .header-actions .header-quote { display: none; }
+  body {
+    padding-bottom: 72px;
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+  }
+
+  .header-inner {
+    min-height: 72px;
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    flex-shrink: 0;
+  }
+
+  .brand-text {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  }
+
+  .main-nav {
+    display: none !important;
+  }
+
+  .header-actions {
+    margin-left: auto;
+    gap: 8px;
+  }
+
+  .header-call {
+    display: inline-flex;
+  }
+
+  .header-actions .header-quote {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
   .hero-section { padding-top: 12px; }
   .hero-grid { padding-top: 32px; }
   .footer-meta { flex-direction: column; }
